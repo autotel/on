@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>On example</title>
+  </head>
+  <body>
+    This example will not seem very useful, as for the sake of simplicity and understandablity, I made the minimal application, that doesn't make sense. This snippet will make sense, however in some more complicated instances.
+    <br> press F12 in windows or make whatever weird thing you need to do in mac computers, to open the developer console.
+  </body>
+  <script src="on.js"></script>
+  <script>
+  console.log("click in the document");
+  //imagine we are making some sort of javascript library
+  var testob=(function(){
+    //I make this just to get the "this" within a listener callback
+    var parent=this;
+    //whoever calls the onHandlers, gets the handling functionality
+    onHandlers.call(this);
+    document.addEventListener("click",function(){
+      //by doing this single line, the testob effectively has a "clik" listener.
+      parent.handle("clik");
+    });
+    this.do=function(){
+      //by doing this single line, the testob effectively has a "doing" listener.
+      this.handle("doing");
+    }
+    return this;
+  })();
+  //now we create the callback for the listeners.
+  testob.on("doing",function(){
+    console.log("testob is doing!");
+  });
+  testob.on("clik",function(){
+    console.log("testob is handling a click.... let's make it do()");
+    testob.do();
+  });
+
+  </script>
+</html>
