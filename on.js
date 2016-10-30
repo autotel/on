@@ -3,7 +3,7 @@ you make the onHandlers.call(this) in the object that needs to have handlers.
 then you can create a function callback for that object using object.on("handlerName.optionalName",callbackFunction(){});
 the object can run the handle callbacks by using this.handle("handlerName",parametersToFeed);
 */
-var onHandlers=function() {
+module.exports=function() {
   var eventVerbose=false;
   if (!this.ons) {
     this.ons = [];

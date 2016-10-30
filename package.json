@@ -1,0 +1,23 @@
+{
+  "name": "onhandlers",
+  "version": "1.0.1",
+  "description": "a prototype to apply to any object that needs to have event handling",
+  "main": "on.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autotel/on.git"
+  },
+  "keywords": [
+    "on",
+    "handler"
+  ],
+  "author": "Joaquin Aldunate",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/autotel/on/issues"
+  },
+  "homepage": "https://github.com/autotel/on#readme"
+}
