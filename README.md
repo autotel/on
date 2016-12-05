@@ -4,7 +4,10 @@ you can make any object to have the "on" functionality when it calls() onHandler
 ```javascript
 onHandlers.call(this);
 ```
+
 then you can just add the handling points in the object.
+##example using HTML or making on a global
+You need to modify the on.js source code, in the first line instead of being `module.exports=function(){`, it should be `onHandlers=function(){`
 ```html
 <script src="on.js"></script>
 <script>
@@ -36,4 +39,15 @@ testob.on("clik",function(){
 
 </script>
 ```
-some more purposeful examples may be displayed in future pushes
+##example using modular syntax
+```javascript
+let eemiter=require('onhandlers');
+function myPrototype(){
+  eemiter.call(this);
+  //example of binding an event to this object
+  this.on('creation', function(){console.log("I was created!");});
+  //example of triggering an event, from the object.
+  this.handle('creation');
+}
+let a = new myPrototype();
+```

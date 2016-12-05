@@ -1,6 +1,6 @@
 {
   "name": "onhandlers",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a prototype to apply to any object that needs to have event handling",
   "main": "on.js",
   "scripts": {
