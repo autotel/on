@@ -19,7 +19,7 @@ module.exports=function() {
       }
       // console.log(this.ons);
     } else {
-      throw ("error at mouse.on, provided callback that is not a function");
+      throw ("error at event handler, provided callback that is not a function");
     }
     return this;
   }
