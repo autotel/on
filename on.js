@@ -4,7 +4,7 @@ https://github.com/autotel/on
 */
 module.exports=function() {
   var eventVerbose=false;
-  var debugVerbose=true;
+  var debugVerbose=false;
   var owner=this;
   if (!this.ons) {
     //this.ons[evtName][evtSurname|0]=[evt]
