@@ -1,23 +1,50 @@
 {
-  "name": "onhandlers",
-  "version": "1.0.2",
+  "_from": "onhandlers@^1.0.3",
+  "_id": "onhandlers@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha1-QwLg5VGF2orfJ+ceGVZFcZvrKdo=",
+  "_location": "/onhandlers",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "onhandlers@^1.0.3",
+    "name": "onhandlers",
+    "escapedName": "onhandlers",
+    "rawSpec": "^1.0.3",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.3"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/onhandlers/-/onhandlers-1.0.3.tgz",
+  "_shasum": "4302e0e55185da8adf27e71e195645719beb29da",
+  "_spec": "onhandlers@^1.0.3",
+  "_where": "C:\\Users\\Joaquín\\repositories\\web-licog",
+  "author": {
+    "name": "Joaquin Aldunate"
+  },
+  "bugs": {
+    "url": "https://github.com/autotel/on/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "a prototype to apply to any object that needs to have event handling",
-  "main": "on.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/autotel/on.git"
-  },
+  "homepage": "https://github.com/autotel/on#readme",
   "keywords": [
     "on",
     "handler"
   ],
-  "author": "Joaquin Aldunate",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/autotel/on/issues"
+  "main": "on.js",
+  "name": "onhandlers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autotel/on.git"
   },
-  "homepage": "https://github.com/autotel/on#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.3"
 }
